@@ -14,6 +14,18 @@
             object-fit: cover; /* Ensures the image covers the area without distortion */
             border-radius: 50%; /* Makes the image circular */
         }
+        .card {
+            transition: transform 0.2s; /* Animation for hover effect */
+        }
+        .card:hover {
+            transform: scale(1.05); /* Scale up on hover */
+        }
+        body {
+            background-color: #f8f9fa; /* Light background color */
+        }
+        .portfolio-section {
+            margin-top: 50px;
+        }
     </style>
 </head>
 <body>
@@ -48,10 +60,45 @@
     <p>Daniel Ray C. Susana</p>
 </div>
 
-<!-- Bootstrap JS and dependencies (optional) -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Skills Section -->
+<div class="container portfolio-section">
+    <h2 class="text-center">Skills</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">HTML</h5>
+                    <p class="card-text">Proficient in creating structured and semantic web pages.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">CSS</h5>
+                    <p class="card-text">Experienced in styling web pages with modern CSS techniques.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">JavaScript</h5>
+                    <p class="card-text">Skilled in adding interactivity and dynamic content to web applications.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-</body>
-</html>
+<!-- Projects Section -->
+<div class="container portfolio-section">
+    <h2 class="text-center">Projects</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Project 1</h5>
+                    <p class="card-text">NBSC E-HEALTH: DESIGN AND DEVELOPMENT OF HEALTH RECORDS & INFORMATION SYSTEM OF THE HEALTH OFFICE OF NBSC.</p>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                    
